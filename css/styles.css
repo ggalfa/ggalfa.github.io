@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,700;0,800;1,600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --main-font: 'Sarabun';
@@ -74,8 +79,8 @@
 }
 
 .aboutImg {
-    width: 48vh;
-    height: 50vh;
+    width: 40vh;
+    height: 35vh;
     border-radius: 50%;
     filter: drop-shadow(34px 0px 12px #000000);
     border-image: 15 15px  30px round;
@@ -217,4 +222,71 @@
     padding-bottom: 48px;
     width: 100%;
 }
+
+.items li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.itemsContainer {
+    width: 100%;
+    align-items: center;
+}
+
+.items li img {
+    width: 100vh;
+    height: 30vh;
+}
+
+.items .item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.items .icons {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -20px auto 0 -47px;
+    text-align: center;
+    z-index: 3;
+}
+
+.items .icons i {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+.items a {
+    width: 40px;
+    height: 40px;
+    background-color: #e74c3c;
+    position: relative;
+    display: inline-block;
+}
+
+.items .imageOverlay {
+    width: 100vh;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+
+    --webkit-transition: all 0.2s linear, 1s;
+    --moz-transition: all 0.2s linear, 1s;
+    --o-transition: all 0.2s linear, 1s;
+    --ms-transition: all 0.2s linear, 1s;
+    --transition: all 0.2s linear, 1s;
+}
+
+.items .item:hover .imageOverlay {
+    opacity: 1;
+}
+
 
