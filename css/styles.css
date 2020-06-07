@@ -85,6 +85,7 @@
     filter: drop-shadow(34px 0px 12px #000000);
     border-image: 15 15px  30px round;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .skillsSection,
@@ -235,7 +236,13 @@
 
 .items li img {
     width: 100vh;
-    height: 30vh;
+    height: 40vh;
+
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
 }
 
 .items .item {
@@ -267,26 +274,60 @@
     background-color: #e74c3c;
     position: relative;
     display: inline-block;
+
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
 }
 
 .items .imageOverlay {
     width: 100vh;
-    height: 30vh;
+    height: 40vh;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 0px;
     top: 0px;
     opacity: 0;
 
-    --webkit-transition: all 0.2s linear, 1s;
-    --moz-transition: all 0.2s linear, 1s;
-    --o-transition: all 0.2s linear, 1s;
-    --ms-transition: all 0.2s linear, 1s;
-    --transition: all 0.2s linear, 1s;
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
 }
 
 .items .item:hover .imageOverlay {
     opacity: 1;
 }
 
+.items .openButton {
+    float: left;
+    left: -200px;
+}
 
+.items .projectLink {
+    float: right;
+    right: -200px;
+}
+
+.items .item:hover .openButton {
+    left: 0px;
+}
+
+.items .item:hover .projectLink {
+    right: 0px;
+}
+
+.items .item:hover img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -transform: scale(1.05, 1.05);
+}
+
+.items {
+    padding: 0px;
+}
