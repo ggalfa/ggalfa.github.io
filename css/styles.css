@@ -330,6 +330,7 @@
 
 .items {
     padding: 0px;
+    padding-bottom: 2px;
 }
 
 .copyrightSection {
@@ -343,6 +344,7 @@
 }
 
 #navigation {
+    width: 100%;
     background-color: var(--main-color);
     padding: 20px 10px;
     z-index: 100;
@@ -367,4 +369,9 @@
     width: 30px;
     height: 30px;
     color: #fff;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
 }
