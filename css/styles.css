@@ -331,3 +331,40 @@
 .items {
     padding: 0px;
 }
+
+.copyrightSection {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 5px;
+}
+
+.copyrightSection p {
+    margin: 0;
+}
+
+#navigation {
+    background-color: var(--main-color);
+    padding: 20px 10px;
+    z-index: 100;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #FFF;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: #FFF;
+}
+
+.navbar-toggler-icon {
+    background: url(../img/portfolio/icons/menu.png);
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
